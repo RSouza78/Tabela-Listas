@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <style>
+        th,
+        td {
+            border: solid 2px;
+        }
+
+        th {
+            background-color: rgb(253, 0, 0);
+        }
+
+        .preco {
+            background-color: yellow;
+        }
+
+        .produto {
+            background-color: rgba(255, 255, 0, 0.568);
+        }
+
+        .total-lo {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lista de compras</h1>
+    <h3>Lista de compra de alimentos saudáveis em tabela:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="produto">Tomate</td>
+                <td class="quantidade">1 Kg</td>
+                <td class="preco">R$ 4,99</td>
+            </tr>
+            <tr>
+                <td class="produto">Pepino</td>
+                <td class="quantidade">1 Kg</td>
+                <td class="preco">R$ 3,99</td>
+            </tr>
+            <tr>
+                <td class="produto">Alface</td>
+                <td class="quantidade">1 Un</td>
+                <td class="preco">R$ 2,99</td>
+            </tr>
+        </tbody>
+        <tfoot class="total">
+            <tr>
+                <td colspan="2">Total</td>
+                <td class=" preco">R$ 11,97</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h3>Lista de compra de alimentos saudáveis em lista ordenada</h3>
+    <ol>
+        <li>Tomate <strong>R$ 4,99 (kg)</strong></li>
+        <li>Pepino <strong>R$ 3,99 (kg)</strong></li>
+        <li>Alface <strong>R$ 2,99 (kg</strong>)</li>
+        <li class="total-lo"><strong>Total R$ 11,97</strong></li>
+    </ol>
+
+    <h3>Lista de compra de alimentos saudáveis em lista desordenada</h3>
+    <ul>
+        <li>Tomate <strong>R$ 4,99 (kg)</strong></li>
+        <li>Pepino <strong>R$ 3,99 (kg)</strong></li>
+        <li>Alface <strong>R$ 2,99 (kg</strong>)</li>
+        <li class="total-lo"><strong>Total R$ 11,97</strong></li>
+    </ul>
+</body>
+</html>
